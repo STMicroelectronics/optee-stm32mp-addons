@@ -5,4 +5,4 @@ ecosystem.
 
 Maintainers:
 Lionel Debieve: <lionel.debieve@foss.st.com>
-Gatien Chevallier: <gatien.chevallier@st.com>
+Gatien Chevallier: <gatien.chevallier@foss.st.com>

@@ -1,0 +1,15 @@
+# This service unit is for calibrating stm32mp clocks
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2022, STMicroelectronics
+
+[Unit]
+Description=Calibrates HSI/CSI clocks
+Wants=stm32mp-calibration.timer
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/stm32mp-calibration
+
+[Install]
+WantedBy=multi-user.target
+

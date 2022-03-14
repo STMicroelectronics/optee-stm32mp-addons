@@ -1,0 +1,17 @@
+# This timer serves stm32mp clocks calibration
+# SPDX-License-Identifier: BSD-3-Clause
+# Copyright (c) 2022, STMicroelectronics
+
+[Unit]
+Description=Serves stm32mp clocks calibration.
+Requires=stm32mp-calibration.service
+
+[Timer]
+Unit=stm32mp-calibration.service
+OnBootSec=1min
+OnCalendar=*-*-* *:*:00
+AccuracySec=5sec
+
+[Install]
+WantedBy=timers.target
+
